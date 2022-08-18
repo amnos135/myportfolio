@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: normal;
+    font-stretch: normal;
+    box-sizing: border-box;
+    cursor: none;
+    overflow-x: hidden;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    /* mix-blend-mode: exclusion; */
+    mix-blend-mode: normal;
+    pointer-events: none;
+    transition: transform .15s ease-in-out;
+}
+
+::selection {
+    color: #C4C4C4;
+    background: #2E2E2E;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #C4C4C4;
+    background: #2E2E2E;
+}
+
+
+
+body {
+    position: relative;
+    overflow-y: hidden;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+span {
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    font-size: 1em;
+    color: black;
+}
+
+.cf {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cb {
+    clear: both;
+}
+
+.none {
+    display: none;
+}
+
+
+/* 헤더,푸터,본문 큰틀 */
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    /*     max-width: 1920px; */
+    height: 120px;
+    position: fixed;
+    z-index: 999;
+    margin: 0 auto;
+    transition: all 0.7s ease-in-out;
+}
+
+.bg {
+    background: url(../img/desk3.png) center;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.show {
+    opacity: 0.8;
+}
+
+#menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #f0f0f0;
+    transition: all 0.7s ease-in-out;
+    background-image: url(../img/code.png);
+    background-repeat: no-repeat;
+    background-position: 10% 100px;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    /*     position: relative;
+    top: 50px; */
+}
+
+#menu ul li {
+    line-height: 70px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.fill {
+    margin: 20px auto;
+    text-align: center;
+    /*  width: fit-content; */
+    display: table;
+    position: relative;
+}
+
+.fill::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-fill-color: white;
+    width: 0;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.fill:hover::after {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #2E2E2E;
+    color: #C4C4C4;
+}
+
+footer p {
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+    font-weight: 300;
+}
