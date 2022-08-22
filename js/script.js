@@ -17,8 +17,8 @@ $(window).scroll(function() {
 
 
 document.addEventListener("mousemove", function(event) {
-  const x = event.pageX - 12;
-  const y = event.pageY - 12;
+  const x = event.pageX - 15;
+  const y = event.pageY - 15;
   const cursor = document.querySelector("#cursor");
   cursor.style.left = x + "px";
   cursor.style.top = y + "px";
@@ -48,11 +48,6 @@ $(document).ready(function(){
 
 var Hello = ["\n%c 잘 부탁드립니다!" + " %c https://github.com/amnos135/ \n", "color: white; font-size: 14px; background: #000; padding:5px 0;", "background: #fff; padding:3px 0; margin-bottom: 4px;"];
 window.console.log.apply(console, Hello);// 콘솔
-
-
-
-
-
 
 
 

@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+#menu ul li:first-child a {
+    color: white;
+}
+
+#menu ul:before {
+    width: 15px;
+    height: 15px;
+    content: "";
+    display: inline-block;
+    background-color: white;
+    background-size: contain;
+    top: -11px;
+    left: 61px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 4px 3px rgb(0 0 0 / 30%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+}
+
+
+section {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#content.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.introduce{
+    width: 100%;
+    height: 800px;
+    background: red;
+}
+ 
+
+.profile {
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.skills{
+    width: 100%;
+    height: 800px;
+    background: blue;
+}
+
+
+.education{
+    width: 100%;
+    height: 800px;
+    background: red;
+}
+
+
+.license{
+    width: 100%;
+    height: 800px;
+    background: red;
+}
+
+ 
+
+@media screen and (min-width: 660px) {
+
+    .profile {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+.profile img {
+    width: 105%;
+    height: 120%;
+    object-fit: cover;
+    position: relative;
+    bottom: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#floatdiv{
+    /* 브라우저를 기준으로 위치가 잡힘 */
+    position: absolute;
+    left: 0;
+    top: 250px;
+     margin-left: -50px; 
+}
+
+#floatdiv ul{
+    list-style: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#floatdiv ul li span{
+    margin: 0 0 5px 0;
+    cursor: pointer;
+}
+
+#floatdiv ul li #btn01{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/button/before/be01.png) no-repeat;
+}
+#floatdiv ul li #btn02{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/button/before/be02.png) no-repeat;
+}
+#floatdiv ul li #btn03{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/button/before/be03.png) no-repeat;
+}
+#floatdiv ul li #btn04{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/button/before/be04.png) no-repeat;
+}
+#floatdiv ul li #btn05{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/button/before/be05.png) no-repeat;
+}
+
+
+
+/* hover */
+#floatdiv ul li:hover #btn01{background: url(../images/button/after/af01.png) no-repeat;}
+#floatdiv ul li:hover #btn02{background: url(../images/button/after/af02.png) no-repeat;}
+#floatdiv ul li:hover #btn03{background: url(../images/button/after/af03.png) no-repeat;}
+#floatdiv ul li:hover #btn04{background: url(../images/button/after/af04.png) no-repeat;}
+#floatdiv ul li:hover #btn05{background: url(../images/button/after/af05.png) no-repeat;}
+
+
+#floatdiv ul li.active #btn01{background: url(../images/button/after/af01.png) no-repeat;}
+#floatdiv ul li.active #btn02{background: url(../images/button/after/af02.png) no-repeat;}
+#floatdiv ul li.active #btn03{background: url(../images/button/after/af03.png) no-repeat;}
+#floatdiv ul li.active #btn04{background: url(../images/button/after/af04.png) no-repeat;}
+#floatdiv ul li.active #btn05{background: url(../images/button/after/af05.png) no-repeat;}
+ 
