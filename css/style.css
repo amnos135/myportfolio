@@ -1,90 +1,5 @@
 @charset "utf-8";
 
-/*  공통 영역
------------------------------------*/
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 500;
-    letter-spacing: -1px;
-    line-height: normal;
-    font-stretch: normal;
-    box-sizing: border-box;
-    cursor: none;
-    overflow-x: hidden;
-}
-
-#cursor {
-    position: absolute;
-    z-index: 9999;
-    width: 30px;
-    height: 30px;
-    background: white;
-    border-radius: 50%;
-    /* mix-blend-mode: exclusion; */
-    mix-blend-mode: normal;
-    pointer-events: none;
-    transition: transform 0.15s ease-in-out;
-}
-
-::selection {
-    color: #c4c4c4;
-    background: #2e2e2e;
-}
-
-::-moz-selection {
-    /* Code for Firefox */
-    color: #c4c4c4;
-    background: #2e2e2e;
-}
-
-body {
-    position: relative;
-    overflow-y: hidden;
-}
-
-ol,
-ul,
-li {
-    list-style: none;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 500;
-
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-        0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-
-span {
-    font-family: "Noto Sans KR";
-    font-weight: 500;
-    font-size: 1em;
-    color: black;
-}
-
-.cf {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.cb {
-    clear: both;
-}
-
-.none {
-    display: none;
-}
 
 /* 헤더,푸터,본문 큰틀 */
 
@@ -135,6 +50,7 @@ header {
 
 h1 {
     line-height: 0px;
+    padding: 0 20px;
 }
 
 h1 img {
@@ -220,8 +136,7 @@ section {
 
 .introduce {
     width: 100%;
-    height: 100vh;
-    background: red;
+    height: 100vh;  
 }
 
 .profile {
@@ -238,7 +153,7 @@ section {
 .skills {
     width: 100%;
     height: 800px;
-    background: blue;
+    
 }
 
 /*  PORTFOLIO 영역 
@@ -247,7 +162,7 @@ section {
 .education {
     width: 100%;
     height: 800px;
-    background: red;
+    
 }
 
 /*  ? 영역 
@@ -256,7 +171,7 @@ section {
 .license {
     width: 100%;
     height: 800px;
-    background: red;
+   
 }
 
 @media screen and (min-width: 660px) {
@@ -273,6 +188,19 @@ section {
     position: relative;
     bottom: 22px;
 }
+
+/*  background
+-----------------------------------*/
+
+.white_brick{
+    background-color: #f0f0f0;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+.dark_brick{
+    background-color: #e5e5e5;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+ }
 
 /*  navbar
 -----------------------------------*/
@@ -294,7 +222,7 @@ section {
 
 #floatdiv ul li span {
     margin: 0 0 5px 0;
-    cursor: pointer;
+    cursor: none;
 }
 
 #floatdiv ul li #btn01,
