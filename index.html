@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 웹 미리보기용 OG메타태그 -->
+    <meta property="og:type" content="KMY_PORTFOLIO">
+    <meta property="og:url" content="https://http://amnos135.dothome.co.kr/">
+    <meta property="og:title" content="KMY_PORTFOLIO">
+    <meta property="og:image" content="./img/profile.png"><!-- 이미지 안나옴 -->
+    <meta property="og:description" content="준비된 퍼블리셔 김민영입니다">
+
+    <title>KMY_PORTFOLIO</title>
+    <!-- 공통영역 따로 빼거나 합치거나 개인취향  -->
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- 따라다니는 플로트메뉴 -->
+    <script src="./js/jquery.Floater.js"></script>
+    <!-- 따라다니는 플로트메뉴 -->
+    <script src="./js/float_script.js"></script>
+    <!-- meta ~~ -->
+</head>
+
+<body>
+    <div id="wrap" class="disable_drag">
+        <!-- 커서 -->
+        <div id="cursor"></div>
+        <!-- 우측 nav button -->
+        <div id="floatdiv">
+            <ul>
+                <li><span id="btn01"></span></li>
+                <li><span id="btn02"></span></li>
+            </ul>
+        </div>
+
+        <!--Left Side Buttons Start-->
+        <div class="sticky-left-container">
+            <ul class="sticky-left">
+                <li>
+                    <a href="tel:01025644537">
+                        <img width="42" height="42" title="" alt="" src="./img/phone_call.png" />
+                        <p>Phone</p>
+                    </a>
+                </li>
+                <li>
+                    <img width="42" height="42" title="" alt="" src="./img/kakao_talk.png" />
+                    <p>Kakaotalk</p>
+                </li>
+                <li>
+                    <a href="mailto:amnos135@gmail.com">
+                        <img width="42" height="42" title="" alt="" src="./img/resume.png" />
+                        <p>Email</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--Left Side Buttons End-->
+
+        <!--헤더,  상단 nav button -->
+        <header>
+            <div class="bg"></div>
+            <div id="menu">
+                <h1>
+                    <img src="./img/logo.png" alt="포트폴리오로고">
+                </h1>
+                <ul>
+                    <li><a class="shadow fill bt-as" data-text="about&skills">about&skills</a></li>
+                    <li><a class="shadow fill bt-p" data-text="portfolio">portfolio</a></li>
+<!--                     <li><a class="fill bt-c" data-text="contact">contact</a></li>
+ -->                </ul>
+            </div>
+        </header>
+
+        <section>
+            <!--  SKILLS 영역 -->
+            <div class="skills white_bg">
+                <div class="skills_inner rred">
+                    <div class="skills_inner_left white_brick" style="position: relative;">
+                        <div class="has-animation animation-rtl textcenter" style="padding: 20px; data-delay="10">
+                            <p class="bigger">기본에 충실한 퍼블리셔 </p>
+                        </div>
+                        <br>
+                        <div class="inner_left textcenter has-animation animation-ltr" data-delay="400">
+                            <img src="./img/profile_1.png " alt="프로필사진" />
+                        </div>
+
+                        <div class="collab has-animation animation-rtl" data-delay="800" style="width:100%; height:100%; position: relative; bottom: 0px;">
+                            <div >
+                                <p class="text">소통/협업/유지보수가 중요한만큼 기본에 충실한 마크업을 지향합니다. W3C 웹표준, 크로스브라우징, 웹접근성을 항상 지킬 수 있도록 노력합니다 </p>
+                            </div>
+    
+    
+                            <div class="button textright" style="padding: 10px;">
+                                <button type="button"
+                                    onclick="window.open('https://thrink-20269.firebaseapp.com/')" class="link">
+                                    <span>resume</span>
+                                </button>
+                                <button type="button"
+                                    onclick="window.open('https://github.com/amnos135/thrinking2022')"
+                                    class="read">
+                                    <span>github</span>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="skills_inner_right">
+                        <div class="inner_right">
+                            <ul>
+                                <li>  
+                                    <ul class="has-animation animation-ltr" data-delay="10">
+                                        <li>//about me</li>
+                                        <br>
+                                        <li>김민영</li>
+                                        <li>1995.01.04</li>
+                                        <li>경기도 과천시</li>
+                                    </ul>
+                                </li>
+                              
+                                <li>
+                                    <ul class="has-animation animation-rtl" data-delay="800">
+                                        <li>//about me</li>
+                                        <br>
+                                        <li>2020.05 &nbsp;&nbsp;&nbsp;&nbsp; 대학교</li>
+                                        <li>2022.05 &nbsp;&nbsp;&nbsp;&nbsp; 그린컴퓨터</li>
+                                    </ul>
+                                </li>
+                             
+                                <li>
+                                    <ul class="has-animation animation-ltr" data-delay="10">
+                                        <li>//about me</li>
+                                        <br>
+                                        <li>Good </li>
+                                        <li>html5 / css3 / scss / jquery</li>
+                                        <li>OK</li>
+                                        <li>javascript / vue / php / mariadb / sql </li>
+                                        <li>Using</li>
+                                        <li>github / figma / firebase / notion </li>
+                                    </ul>
+                                </li>
+                            
+                                <li>
+                                    <ul class="has-animation animation-rtl" data-delay="800">
+                                        <li>//nice to meet me</li>
+                                        <br>
+                                        <li>#발전하는 #성장하는 #협동하는 #기본을지키는</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PORTFOLIO 영역 -->
+            <div class="portfolio white_bg">
+                <div id="works">
+                    <div class="works_inner rred">
+                        <p> portfolio works</p>
+                        <p> W3C 웹표준 기준을 준수하는 웹사이트 작업물입니다</p>
+                        <ul class="w_lists">
+                            <li>
+                                <div class="list1 list2">
+                                    <div class="monitor">
+                                        <div class="screen screen1">
+                                            <img src="./img/phone2.png" alt="">
+                                        </div>
+                                        <div class="web">
+                                            <img src="./img/qr.PNG" alt="모니터">
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <h3>Thrinking</h3>
+                                    </div>
+
+                                    <ul class="flex">
+                                        <li>팀프로젝트</li>
+                                        <li>로그인</li>
+                                        <li>VUE</li>
+                                        <li>firebase</li>
+                                    </ul>
+                                    <div class="button flex">
+                                        <button type="button"
+                                            onclick="window.open('https://thrink-20269.firebaseapp.com/')" class="link">
+                                            <span>site</span>
+                                        </button>
+                                        <button type="button"
+                                            onclick="window.open('https://github.com/amnos135/thrinking2022')"
+                                            class="read">
+                                            <span>read.me</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="list3">
+                                    <ul>
+                                        <li>
+                                            <h3>//작업물설명</h3>
+                                            <p>처음으로 VUE를 사용하여 만들어본 어플리케이션입니다. 모든 기능이 구현되지는 않지만 라이브러리와 부트스트랩을 사용하여
+                                                최대한 구동 가능하게 제작하였습니다 </p>
+                                        </li>
+                                        <li>
+                                            <h3>//참여도</h3>
+                                            <p>3인 조별과제</p>
+                                        </li>
+                                        <li>
+                                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                                                explicabo quidem sit eveniet numquam enim earum ipsam esse quo
+                                                assumenda accusantium vel molestiae, mollitia culpa voluptate beatae
+                                                asperiores possimus aspernatur.</h3>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li> <!-- Thrinking 끝 -->
+                            <li>
+                                <div class="list1">
+                                    <div class="monitor">
+                                        <div class="screen screen1">
+                                            <img src="./img/web/screen_cityhall.png" alt="">
+                                        </div>
+                                        <div class="web">
+                                            <img src="./img/mockup.png" alt="모니터">
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <h3>영주시청</h3>
+                                    </div>
+                                    <ul class="flex">
+                                        <li>리디자인</li>
+                                        <li>반응형</li>
+                                        <li>미디어쿼리</li>
+                                        <li>웹표준</li>
+                                    </ul>
+                                    <div class="button flex">
+                                        <button type="button"
+                                            onclick="window.open('./portfolio/po_cityhall-main/index.html')"
+                                            class="link">
+                                            <span>site</span>
+                                        </button>
+                                        <button type="button"
+                                            onclick="window.open('https://github.com/amnos135/po_cityhall')"
+                                            class="read">
+                                            <span>read.me</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="list3">
+                                    <ul>
+                                        <li>
+                                            <h3>//작업물설명</h3>
+                                            <p>처음으로 VUE를 사용하여 만들어본 어플리케이션입니다. 모든 기능이 구현되지는 않지만 라이브러리와 부트스트랩을 사용하여
+                                                최대한 구동 가능하게 제작하였습니다 </p>
+                                        </li>
+                                        <li>
+                                            <h3>//참여도</h3>
+                                            <p>3인 조별과제</p>
+                                        </li>
+                                        <li>
+                                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                                                explicabo quidem sit eveniet numquam enim earum ipsam esse quo
+                                                assumenda accusantium vel molestiae, mollitia culpa voluptate beatae
+                                                asperiores possimus aspernatur.</h3>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li> <!-- 영주시청 끝 -->
+                            <li>
+                                <div class="list1">
+                                    <div class="monitor">
+                                        <div class="screen screen2">
+                                            <img src="./img/web/screen_php.png" alt="">
+                                        </div>
+                                        <div class="web">
+                                            <img src="./img/mockup.png" alt="모니터">
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <h3>NOROO</h3>
+                                    </div>
+                                    <ul class="flex">
+                                        <li>리디자인</li>
+                                        <li>반응형</li>
+                                        <li>PHP</li>
+                                        <li>웹표준</li>
+                                    </ul>
+                                    <div class="button flex">
+                                        <button type="button" onclick="window.open('http://amnos136.dothome.co.kr/')"
+                                            class="link">
+                                            <span>site</span>
+                                        </button>
+                                        <button type="button"
+                                            onclick="window.open('https://github.com/amnos135/po_noroo')" class="read">
+                                            <span>read.me</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="list3">
+                                    <ul>
+                                        <li>
+                                            <h3>//작업물설명</h3>
+                                            <p>처음으로 VUE를 사용하여 만들어본 어플리케이션입니다. 모든 기능이 구현되지는 않지만 라이브러리와 부트스트랩을 사용하여
+                                                최대한 구동 가능하게 제작하였습니다 </p>
+                                        </li>
+                                        <li>
+                                            <h3>//참여도</h3>
+                                            <p>3인 조별과제</p>
+                                        </li>
+                                        <li>
+                                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                                                explicabo quidem sit eveniet numquam enim earum ipsam esse quo
+                                                assumenda accusantium vel molestiae, mollitia culpa voluptate beatae
+                                                asperiores possimus aspernatur.</h3>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li><!-- NOROO 끝 -->
+                            <li>
+                                <div class="list1">
+                                    <div class="monitor">
+                                        <div class="screen screen1">
+                                            <img src="./img/web/screen_noroo.png" alt="">
+                                        </div>
+                                        <div class="web">
+                                            <img src="./img/mockup.png" alt="모니터">
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <h3>노루페인트</h3>
+                                    </div>
+
+                                    <ul class="flex">
+                                        <li>리디자인</li>
+                                        <li>반응형</li>
+                                        <li>미디어쿼리</li>
+                                        <li>웹표준</li>
+                                    </ul>
+                                    <div class="button flex">
+                                        <button type="button"
+                                            onclick="window.open('https://amnos135.github.io/po_noroo/')" class="link">
+                                            <span>site</span>
+                                        </button>
+                                        <button type="button"
+                                            onclick="window.open('https://github.com/amnos135/po_noroo')" class="read">
+                                            <span>read.me</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="list3">
+                                    <ul>
+                                        <li>
+                                            <h3>//작업물설명</h3>
+                                            <p>처음으로 VUE를 사용하여 만들어본 어플리케이션입니다. 모든 기능이 구현되지는 않지만 라이브러리와 부트스트랩을 사용하여
+                                                최대한 구동 가능하게 제작하였습니다 </p>
+                                        </li>
+                                        <li>
+                                            <h3>//참여도</h3>
+                                            <p>3인 조별과제</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li> <!-- 노루페인트 끝 -->
+                            <li>
+                                <div class="list1">
+                                    <div class="monitor">
+                                        <div class="screen screen1">
+                                            <img src="./img/web/screen_br.PNG" alt="">
+                                        </div>
+                                        <div class="web">
+                                            <img src="./img/mockup.png" alt="모니터">
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <h3>배취고사</h3>
+                                    </div>
+                                    <ul class="flex">
+                                        <li>리디자인</li>
+                                        <li>반응형</li>
+                                        <li>미디어쿼리</li>
+                                        <li>웹표준</li>
+                                    </ul>
+                                    <div class="button flex">
+                                        <button type="button" onclick="window.open('http://52.78.144.211/')"
+                                            class="link">
+                                            <span>site</span>
+                                        </button>
+                                        <button type="button"
+                                            onclick="window.open('https://github.com/amnos135/po_cityhall')"
+                                            class="read">
+                                            <span>none</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="list3">
+                                    <ul>
+                                        <li>
+                                            <h3>//작업물설명</h3>
+                                            <p>처음으로 VUE를 사용하여 만들어본 어플리케이션입니다. 모든 기능이 구현되지는 않지만 라이브러리와 부트스트랩을 사용하여
+                                                최대한 구동 가능하게 제작하였습니다 </p>
+                                        </li>
+                                        <li>
+                                            <h3>//참여도</h3>
+                                            <p>퍼블리싱 100%</p>
+                                        </li>
+                                        <li>
+                                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                                                explicabo quidem sit eveniet numquam enim earum ipsam esse quo
+                                                assumenda accusantium vel molestiae, mollitia culpa voluptate beatae
+                                                asperiores possimus aspernatur.</h3>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li> <!-- 배취고사 끝 -->
+                            <li style="display: none;">
+                                <div class="list1">
+                                    <div class="monitor">
+                                        <div class="screen screen2">
+                                            <img src="./img/web/website2.png" alt="">
+                                        </div>
+                                        <div class="web">
+                                            <img src="./img/mockup.png" alt="모니터">
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <h3>10정다담</h3>
+                                    </div>
+                                    <ul class="flex">
+                                        <li>리디자인</li>
+                                        <li>반응형</li>
+                                        <li>미디어쿼리</li>
+                                        <li>웹표준</li>
+                                    </ul>
+                                    <div class="button flex">
+                                        <button type="button" onclick="window.location.href='http://www.jungdadam.com/'"
+                                            class="link">
+                                            <span>site</span>
+                                        </button>
+                                        <button class="read">
+                                            <span>read.me</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </li><!-- 정다담 끝 -->
+                            <li style="display: none;">
+                                <div class="list1">
+                                    <div class="monitor">
+                                        <div class="screen screen1">
+                                            <img src="./img/web/website.png" alt="">
+                                        </div>
+                                        <div class="web">
+                                            <img src="./img/mockup.png" alt="모니터">
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <h3>09휴고보스</h3>
+                                    </div>
+                                    <ul class="flex">
+                                        <li>리디자인</li>
+                                        <li>반응형</li>
+                                        <li>미디어쿼리</li>
+                                        <li>웹표준</li>
+                                    </ul>
+                                    <div class="button flex">
+                                        <button type="button"
+                                            onclick="window.location.href='https://www.hugoboss.com/kr/hugo-women/'"
+                                            class="link">
+                                            <span>site</span>
+                                        </button>
+                                        <button class="read">
+                                            <span>read.me</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li> <!-- 휴고보스 끝 -->
+
+
+
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            </div><!-- ?? -->
+        </section>
+    <!-- Copyright -->
+        <footer>
+            <p class="draggable">Copyright Min Yeong Kim 2022 All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
