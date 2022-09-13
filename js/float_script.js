@@ -28,7 +28,7 @@ $(function () {
 
     $('.bt-p').click(function () { /*  portfolio 누르면 class.portfolio의 위치보다 120px위에 도달하기 */
         $('html, body').animate({
-            scrollTop: $(".portfolio").offset().top -150
+            scrollTop: $(".portfolio").offset().top -140
         }, 900);
     })
 

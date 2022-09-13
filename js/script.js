@@ -26,7 +26,7 @@ document.addEventListener("mousemove", function(event) {
 
 $(document).ready(function(){
   $('h1').mouseover(function() {
-    $('#cursor').css({transform: "scale(6)", 'mix-blend-mode': "difference", background: "white" });
+    $('#cursor').css({transform: "scale(8)", 'mix-blend-mode': "difference", background: "white" });
   });
   $('h1').mouseleave(function() {
     $('#cursor').css({transform: "scale(1)",'mix-blend-mode': "normal", background: "black"});
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
   $('button').mouseover(function() {
-    $('#cursor').css({transform: "scale(6)", 'mix-blend-mode': "difference", background: "white"});
+    $('#cursor').css({transform: "scale(8)", 'mix-blend-mode': "difference", background: "white"});
   });
 
   $('button').mouseleave(function() {

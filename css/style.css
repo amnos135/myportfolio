@@ -608,8 +608,10 @@ ul.w_lists li .list2 .monitor .web img:first-child {
 .read:hover:after {
     background-image: url(../img/github.png);
     background-repeat: no-repeat;
+    width: 24px;
     margin-top: 4px;
-    background-size: contain;
+    right: 0px;
+    background-size: cover;
 }
 
 .list3 {
