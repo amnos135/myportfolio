@@ -26,19 +26,19 @@ document.addEventListener("mousemove", function(event) {
 
 $(document).ready(function(){
   $('h1').mouseover(function() {
-    $('#cursor').css({transform: "scale(6)", 'mix-blend-mode': "overlay"});
+    $('#cursor').css({transform: "scale(6)", 'mix-blend-mode': "difference", background: "white" });
   });
   $('h1').mouseleave(function() {
-    $('#cursor').css({transform: "scale(1)",'mix-blend-mode': "normal"});
+    $('#cursor').css({transform: "scale(1)",'mix-blend-mode': "normal", background: "black"});
   });
 
 
   $('button').mouseover(function() {
-    $('#cursor').css({transform: "scale(6)", 'mix-blend-mode': "overlay"});
+    $('#cursor').css({transform: "scale(6)", 'mix-blend-mode': "difference", background: "white"});
   });
 
   $('button').mouseleave(function() {
-    $('#cursor').css({transform: "scale(1)",'mix-blend-mode': "normal"});
+    $('#cursor').css({transform: "scale(1)",'mix-blend-mode': "normal", background: "black"});
   });//커서
 
   $(".2_popup").click(function() {
