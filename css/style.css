@@ -283,9 +283,9 @@ section {
     z-index: 9;
 }
 
-.has-animation.animate-in:before {
+/* .has-animation.animate-in:before {
     background-color: #f0f0f0;
-}
+} */
 
 .has-animation.animate-in:after {
     background-color: #2e2e2e;
